@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mgr.trazabilizator.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_noperecederos"
+            app:destination="@id/nav_nonperishable"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_perecederos"
+            app:destination="@id/nav_perishable"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_produccion"
+            app:destination="@id/nav_production"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_perishable"
+        android:name="com.mgr.trazabilizator.ui.perishable.PerishableFragment"
+        android:label="@string/perishable"
+        tools:layout="@layout/fragment_recyclerfood">
+        <action
+            android:id="@+id/action_nav_perecederos_to_nuevoPerecederosFragment"
+            app:destination="@id/nav_newPerishableFragment"
+            app:popUpTo="@id/nav_perishable" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_newPerishableFragment"
+        android:name="com.mgr.trazabilizator.ui.perishable.NewPerishableFragment"
+        android:label="@string/newPerishable"
+        tools:layout="@layout/fragment_newperishable">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_nonperishable"
+        android:name="com.mgr.trazabilizator.ui.nonPerishable.NonPerishableFragment"
+        android:label="@string/nonPerishable"
+        tools:layout="@layout/fragment_recyclerfood">
+        <action
+            android:id="@+id/action_nav_noperecederos_to_nav_nuevoNoPerecederos"
+            app:destination="@id/nav_newNonPerishableFragment"
+            app:popUpTo="@id/nav_nonperishable" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_newNonPerishableFragment"
+        android:name="com.mgr.trazabilizator.ui.nonPerishable.NewNonPerishableFragment"
+        android:label="@string/newNonPerishable"
+        tools:layout="@layout/fragment_newnonperishable">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_production"
+        android:name="com.mgr.trazabilizator.ui.production.ProductionControlFragment"
+        android:label="@string/productionControl"
+        tools:layout="@layout/fragment_recyclerfood">
+        <action
+            android:id="@+id/action_nav_produccion_to_nuevoProduccionFragment"
+            app:destination="@id/nav_newProductionFragment"
+            app:popUpTo="@id/nav_production" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_newProductionFragment"
+        android:name="com.mgr.trazabilizator.ui.production.NewProductionControlFragment"
+        android:label="@string/newProduction"
+        tools:layout="@layout/fragment_newproduction">
+
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity2"
+        android:name="com.mgr.trazabilizator.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity2"
+        android:name="com.mgr.trazabilizator.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.mgr.trazabilizator.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <fragment
+        android:id="@+id/nav_dateFragment"
+        android:name="com.mgr.trazabilizator.ui.date.DateFragment"
+        android:label="@string/choose_date"
+        tools:layout="@layout/fragment_date" />
+    <fragment
+        android:id="@+id/nav_preferentialDateFragment"
+        android:name="com.mgr.trazabilizator.ui.preferentialDate.PreferentialDateFragment"
+        android:label="@string/choose_date"
+        tools:layout="@layout/fragment_date" />
+    <fragment
+        android:id="@+id/nav_endDateFragment"
+        android:name="com.mgr.trazabilizator.ui.endDate.EndDateFragment"
+        android:label="@string/choose_date"
+        tools:layout="@layout/fragment_date" />
+    <fragment
+        android:id="@+id/nav_startDateFragment"
+        android:name="com.mgr.trazabilizator.ui.startDate.StartDateFragment"
+        android:label="@string/choose_date"
+        tools:layout="@layout/fragment_date" />
+    <fragment
+        android:id="@+id/nav_expiryDateFragment"
+        android:name="com.mgr.trazabilizator.ui.expiryDate.ExpiryDateFragment"
+        android:label="@string/choose_date"
+        tools:layout="@layout/fragment_date" />
+    <fragment
+        android:id="@+id/nav_providerFragment"
+        android:name="com.mgr.trazabilizator.ui.provider.ProviderFragment"
+        android:label="@string/provider"
+        tools:layout="@layout/fragment_recyclerprovider">
+        <action
+            android:id="@+id/action_nav_providerFragment_to_nav_newProviderFragment"
+            app:destination="@id/nav_newProviderFragment"
+            app:popUpTo="@id/nav_providerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_responsableFragment"
+        android:name="com.mgr.trazabilizator.ui.responsable.ResponsableFragment"
+        android:label="@string/responsable"
+        tools:layout="@layout/fragment_recyclerresponsable" />
+    <fragment
+        android:id="@+id/nav_newProviderFragment"
+        android:name="com.mgr.trazabilizator.ui.provider.NewProviderFragment"
+        android:label="@string/provider"
+        tools:layout="@layout/fragment_newprovider" />
+    <fragment
+        android:id="@+id/nav_ingredientsFragment"
+        android:name="com.mgr.trazabilizator.ui.ingredients.IngredientsFragment"
+        android:label="@string/ingredients"
+        tools:layout="@layout/fragment_recycleringredients" />
+    <fragment
+        android:id="@+id/nav_aboutFragment"
+        android:name="com.mgr.trazabilizator.ui.about.aboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_editProductionControlFragment"
+        android:name="com.mgr.trazabilizator.ui.production.EditProductionControlFragment"
+        android:label="@string/productionControlEdit"
+        tools:layout="@layout/fragment_editproduction" />
+    <fragment
+        android:id="@+id/nav_editNonPerishableFragment"
+        android:name="com.mgr.trazabilizator.ui.nonPerishable.EditNonPerishableFragment"
+        android:label="@string/nonPerishableEdit"
+        tools:layout="@layout/fragment_editnonperishable" />
+    <fragment
+        android:id="@+id/nav_editPerishableFragment"
+        android:name="com.mgr.trazabilizator.ui.perishable.EditPerishableFragment"
+        android:label="@string/perishableEdit"
+        tools:layout="@layout/fragment_editperishable" />
+</navigation>

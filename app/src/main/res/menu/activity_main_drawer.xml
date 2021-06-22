@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_perishable"
+            android:icon="@drawable/perishable_icon"
+            android:title="@string/perishable" />
+        <item
+            android:id="@+id/nav_nonperishable"
+            android:icon="@drawable/nonperishable_icon"
+            android:title="@string/nonPerishable" />
+        <item
+            android:id="@+id/nav_production"
+            android:icon="@drawable/production_icon"
+            android:title="@string/productionControl" />
+    </group>
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:textAlignment="center"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/buttonPerishable"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/perishable_icon"
+        android:drawableRight="@drawable/perishable_icon"
+        android:drawableTint="@color/white"
+        android:text="@string/perishable"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNonPerishable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNonPerishable"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/nonperishable_icon"
+        android:drawableRight="@drawable/nonperishable_icon"
+        android:drawableTint="@color/white"
+        android:text="@string/nonPerishable"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProduction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPerishable" />
+
+    <Button
+        android:id="@+id/buttonProduction"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/production_icon"
+        android:drawableRight="@drawable/production_icon"
+        android:drawableTint="@color/white"
+        android:text="@string/productionControl"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNonPerishable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

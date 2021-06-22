@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "253228517379",
+    "project_id": "trazabilizator",
+    "storage_bucket": "trazabilizator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253228517379:android:8a91bbb5a16eef2507a636",
+        "android_client_info": {
+          "package_name": "com.mgr.trazabilizator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253228517379-c62afaflg81a84iaf4b78qsp9p0rlfie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNkKTyGwjRLDj1DCRgaOHhQ2Um3Ndzg3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253228517379-c62afaflg81a84iaf4b78qsp9p0rlfie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

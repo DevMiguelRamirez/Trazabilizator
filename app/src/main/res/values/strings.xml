@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name" translatable="false">Trazabilizator</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="register_now">Register</string>
+    <string name="go_to_login">Go to login</string>
+    <string name="loginFailed">Login failed</string>
+    <string name="registerFailed">Register failed</string>
+    <string name="checkEmail">Check your email</string>
+    <string name="tryAgain">Write your email and try again</string>
+    <string name="checkData">Check the data and try again</string>
+    <string name="centerName" translatable="false">I.E.S. Américo Castro</string>
+    <string name="emailProfile" translatable="false">android.studio@android.com</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="domainFailed">"Email domain not allowed "</string>
+    <string name="registerComplete">"Complete registration, now try to login in "</string>
+    <string name="date">Date</string>
+    <string name="product">Product</string>
+    <string name="product2">Product:</string>
+    <string name="provider">Provider</string>
+    <string name="delivery">Delivery number</string>
+    <string name="lot">Lot number</string>
+    <string name="lot2">Lot number:</string>
+    <string name="amount">Amount</string>
+    <string name="temperature">Temperature</string>
+    <string name="condition">Condition</string>
+    <string name="ExpiryDate">Date of expiry</string>
+    <string name="startDate">Start date</string>
+    <string name="endingDate">Ending date</string>
+    <string name="startDate2">Start date:</string>
+    <string name="endingDate2">Ending date:</string>
+    <string name="preferentialDate">Preferential date</string>
+    <string name="responsable">Responsable</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="incidents">Incidents</string>
+    <string name="correctives">Corrective measures</string>
+    <string name="observations">Observations</string>
+    <string name="perishable">Perishable food</string>
+    <string name="nonPerishable">Non perishable food</string>
+    <string name="productionControl">Production control</string>
+    <string name="reset">Reset</string>
+    <string name="upload">Upload</string>
+    <string name="newPerishable">New perishable</string>
+    <string name="newNonPerishable">New non perishable</string>
+    <string name="newProduction">New production</string>
+    <string name="name">Name</string>
+    <string name="coment">*The registration email must be the one provided by the center .*</string>
+    <string name="choose_date">Choose date</string>
+    <string name="signOut">Sign out</string>
+    <string name="providers">Providers</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="successfully">Uploaded successfully</string>
+    <string name="Error" translatable="false">Error</string>
+    <string name="about">About...</string>
+    <string name="aboutText">Application created by Miguel Ramirez for students of the fp Processes and Quality in the Food Industry of Huetor Tajar.</string>
+    <string name="aboutText2">Any questions or suggestions: miguel.ramirez@ponienteformacion.com</string>
+    <string name="aboutText3">Created without profit.</string>
+    <string name="selected">selected</string>
+    <string name="date2">Date:</string>
+    <string name="provider2">Provider:</string>
+    <string name="delivery2">Delivery:</string>
+    <string name="amount2">Amount:</string>
+    <string name="temperature2">Temperature:</string>
+    <string name="responsable2">Responsable:</string>
+    <string name="condition2">Condition:</string>
+    <string name="ExpiryDate2">Day of expiry:</string>
+    <string name="preferentialDate2">Preferential date:</string>
+    <string name="ingredients2">Ingredients:</string>
+    <string name="incidents2">Incidents:</string>
+    <string name="correctives2">Corrective measures:</string>
+    <string name="observations2">Observations:</string>
+    <string name="coment2">*The password requires a minimum of 6 characters.*</string>
+    <string name="update">Update</string>
+    <string name="successfullyUpdate">Update successfully</string>
+    <string name="productionControlEdit">Editing production control</string>
+    <string name="perishableEdit">Editing perishable</string>
+    <string name="nonPerishableEdit">Editing non perishable</string>
+    <string name="missing">"Mandatory data is missing "</string>
+    <string name="date3">Date*</string>
+    <string name="product3">Product*</string>
+    <string name="responsable3">Responsable*</string>
+    <string name="amount3">Amount*</string>
+    <string name="condition3">Condition*</string>
+    <string name="name2">Name*</string>
+</resources>
